@@ -169,6 +169,7 @@ def app():
                 data[column] = data[column].apply(remove_whitespace_multiple)
                 data[column] = data[column].apply(remove_whitespace_LT)
         stop = timeit.default_timer()
+        text_preprocessing(data,'Tokenizing',column)
     if steps == "Stopwords Removal/Filtering":
         st.markdown('Lanjutan dari tahapan tokenizing adalah tahapan filtering yang digunakan untuk mengambil kata-kata yang penting dari hasil token tadi. Kata umum yang biasanya muncul dan tidak memiliki makna disebut dengan stopword. Penghilangan stopword ini dapat mengurangi ukuran index dan waktu pemrosesan. Selain itu, juga dapat mengurangi level noise.')
         text_preprocessing(data,'Stopwords Removal/Filtering',column,list_stem_stop_leng,index_detect_leng)
