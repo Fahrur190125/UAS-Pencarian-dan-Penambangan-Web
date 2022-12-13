@@ -8,7 +8,7 @@ def app():
 	with st.expander("Tampilkan"):
 		col1, col2 = st.columns(2)
 		with col1:
-			bio = pd.read_excel('data/bio.xlsx')
+			bio = pd.read_excel('data/bio.csv')
 			st.write(bio)
 		with col2:
 			st.image("https://raw.githubusercontent.com/Fahrur190125/img/master/foto_diri.jpeg")
