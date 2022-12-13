@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import docx2txt
 def app():
 	st.title("KLASIFIKASI KOMENTAR YOUTUBE")
 	st.header('About Me')
